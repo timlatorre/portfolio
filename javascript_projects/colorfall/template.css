@@ -1,0 +1,14 @@
+#colorfall {
+  margin-left: 0;
+}
+.column {
+  float:left;
+  width: 10%;
+
+}
+
+.box
+{
+  width: 100%;
+  height: 50px;
+}
