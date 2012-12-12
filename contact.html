@@ -11,7 +11,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
 
-  <title>Tim LaTorre | Design + Development</title>
+  <title>Tim LaTorre | About </title>
 
   <!-- Included CSS Files (Uncompressed) -->
   <!--
@@ -31,59 +31,52 @@
 
 </head>
 <body>
-  <div id="wrapper">
+  <div id="wrapper-inside">
 
-    <div id="topbar"></div><!-- #topbar -->
+    <nav class="top-bar fixed">
+      <ul>
+        <li class="name"><h1><a href="index.html">Tim LaTorre <small>design + development</small></a></h1></li>
+        <li class="toggle-topbar"><a href="#"></a></li>
+      </ul>
+      <section>
+        <ul class="right">
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="right">
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <ul class="right">
+          <li><a href="development.html">Development</a></li>
+        </ul>
+        <ul class="right">
+          <li><a href="design.html">Design</a></li>
+        </ul>
+      </section>
+    </nav><!-- .top-bar -->
 
-      <header>
-        <div id="logo">
-          Tim LaTorre <span>design + development.</span>
-        </div><!-- #logo -->
-      </header>
+    <div class="row" style="margin-bottom: 60px;">
+      <div class="ten columns">
+        <span class="page_title">Contact</span>
+      </div><!-- .ten.columns -->
+    </div><!-- .row -->
 
-      <div class="row">
-        <div class="twelve columns">
-          <div id="home_nav">
-              <ul>
-                <li><a href="design.html">Design</a></li>
-                <li><a href="development.html">Development</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-          </div><!-- #home_nav -->
-        </div><!-- .twelve columns -->
-      </div><!-- .row -->
+    <div class="row">
+      <div class="twelve columns">
 
-      <div class="row" id="headline">
-        <div class="twelve columns" >
-          <h1>Hi! I'm Tim.</h1>
-          <h3>I've worked in traditional graphic design for years . . . <br> but now I'm a <strong>full-stack Rails developer</strong> as well!</h3>
-        </div><!-- .twelve columns #headline -->
-      </div><!-- .row -->
+        <div class="contact">
+          <div class="contact-type"><h5>Email</h5></div><!-- .contact-type -->
+          <div class="contact-info"><a href="mailto:timlatorre@gmail.com">timlatorre@gmail.com</a></div><!-- .contact-info -->
+        </div><!-- .contact -->
 
-      <div id="clients">
-        <div class="row">
-          <div class="ten columns">
-            <h5>My clients have included:</h5>
-              <img src="images/Client_logo_wall2.jpg">
-          </div><!-- .ten columns -->
-          <div class="two columns">
-            <h6>QUICK LINKS</h6>
-            <ul>
-              <li><a href="https://www.linkedin.com/in/timlatorre">LinkedIn</a></li>
-              <li><a href="https://github.com/timlatorre">GitHub</a></li>
-              <li><a href="https://twitter.com/timlatorre">Twitter</a></li>
-            </ul>
-          </div><!-- .two columns -->
-        </div><!-- .row -->
-            <footer>© Tim LaTorre, 2012.</footer>
-    </div><!-- #clients  -->
+        <div class="contact">
+          <div class="contact-type"><h5>Phone</h5></div><!-- .contact-type -->
+          <div class="contact-info">646.331.4507</div><!-- .contact-info -->
+        </div><!-- .contact -->
+
+      </div><!-- .twelve .columns -->
+    </div><!-- .row -->
 
 
-
-
-
-  </div><!-- #wrapper -->
 
   <!-- Included JS Files (Uncompressed) -->
   <!--
@@ -135,6 +128,6 @@
       $("#featured").orbit();
     });
     </script>
-
+  </div><!-- #wrapper -->
 </body>
 </html>
