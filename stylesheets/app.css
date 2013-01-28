@@ -110,6 +110,13 @@ header { background: rgba(152, 0, 46, 1); }
 .proj_img img { border: solid white 10px; width: 600px; margin: 0 auto; display: block; margin-bottom: 20px; }
 .proj_type h2 { font-family: 'avenirlight', sans-serif; font-size: 30px; text-transform: uppercase; }
 
+.proj_title-dev { font-family: 'avenirroman', sans-serif; background-color: rgba(152, 0, 46, 1); padding: 13px 10px 5px 10px; font-size: 28px; margin-bottom: 10px; border-radius: 10px 10px 0 0;  }
+.proj_title-dev a { color: rgba(255, 255, 255, 1); text-decoration: none; }
+.proj_title-dev a:hover { color: rgba(255, 255, 255, .5); }
+.proj_img-dev img { margin: 0 auto; display: block; margin-bottom: 20px; }
+.proj_text-dev { font-family: 'avenirroman', sans-serif; font-size: 17px; line-height: 1.7em; }
+.proj_text-dev_header { background-color: black; padding: 5px 8px 4px 8px; color: white; font-size: 16px; }
+
 footer { text-align: center; color: white; font-size: 10px; }
 .about img { border: solid white 10px;  }
 .about p { font-family: 'avenirlight', sans-serif; font-size: 18px;  }
