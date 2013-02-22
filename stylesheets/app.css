@@ -9,14 +9,9 @@ Author: Tim LaTorre | timlatorre@gmail.com
 
      01 FONTS
      02 MISC
-     03 GLOBAL STYLES
+     03 GLOBAL STYLES & RESETS
      04 STYLING
-     05 WEB STRUCTURE
-     05 SOCIAL MEDIA
-     06 CONTACT FORM
-     07 FOOTER
-
-     XX- xxNAMExx
+     05 STRUCTURE
 
 ---------------------------------------*/
 
@@ -50,6 +45,12 @@ Author: Tim LaTorre | timlatorre@gmail.com
          url('../fonts/avenir-light-webfont.svg#avenirlight') format('svg');
 }
 
+@font-face {
+  font-family: 'Allura';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Allura'), local('Allura-Regular'), url(http://themes.googleusercontent.com/static/fonts/allura/v1/piROihwq0_hcWhCbsLJUv-vvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
 
 /*---------  02 MISC  ----------*/
 
@@ -65,29 +66,59 @@ Author: Tim LaTorre | timlatorre@gmail.com
 
 
 
-/*------ 03 GLOBAL STYLES ------*/
+/*------ 03 GLOBAL STYLES & RESETS------*/
+body { background: url('../images/retro_intro.png') #f3f2f1; font-family: 'avenirroman', Arial, sans-serif; font-size: 12px; color: #000; line-height: 1.1; margin: 0; padding: 0; }
+ul { line-height: 1.1; margin-bottom: 0; }
 
-body { background: url('../images/retro_intro.png') #f3f2f1; font-family: 'avenirroman', Arial, sans-serif; font-size: 12px; color: #000; line-height: 1.1; }
 
+/*-----  05 STRUCTURE  -----*/
 
+header { width: 100%; z-index: 100; position: fixed; }
+#header_top { width: 100%; height: 5px; }
+#header_gap { width: 100%; height: 8px; }
+#logo { height: 100%; padding: 14px 0 0 0; }
+header ul { list-style: none; position: relative; float: left; display: block; left: 50%; }
+header ul li { position: relative; float: left; display: block; right: 50%; }
+header ul li span { margin-left: 10px; }
+.nav_item { margin-left: 15px; }
+header nav ul { margin-top: -10px; margin-bottom: 10px; }
+
+#headline { padding-top: 180px; margin-bottom: 30px; }
+#headline h3 { margin-top: -10px; line-height: 1.3; }
+
+#clients { padding: 20px; }
+#clients h5 { padding: 5px 10px; width: 255px; }
+#client_box { width: 90%; height: 100px;}
+
+.section_divider { width: 100%; height: 250px; margin-bottom: 70px; padding-top: 105px;  }
+.section_title { }
+#design {  }
+#development {  }
+#about {  }
+#contact {  }
+
+.proj_title { margin-bottom: 10px;  }
+.about img { margin: 0 auto; display: block; margin-bottom: 30px;  }
+.subhead a { margin-left: 30px; }
+.proj_type h2 { margin-top: 55px; }
+
+.contact { margin: 0 0 30px 0; }
+.contact-type h5 { padding: 10px; height: 42px; float: left; text-align: center; margin: 0 15px 0 0;}
+.contact-info { padding: 3px 0 0 0; }
+
+footer { padding: 100px 0 50px 0; }
 
 /*--------- 04 STYLING ---------*/
 
-#wrapper { height: 100%; }
-#wrapper-inside { height: 100%; padding-top: 100px; }
-#topbar { background: rgba(237, 23, 79, 1); }
-
-nav ul li h1 a { font-family: 'avenirroman', Arial, sans-serif; }
-nav ul li h1 a small { font-family: 'adobe_garamondsemibold_italic', serif; color: rgba(237, 23, 79, 1); font-size: 16px; }
-nav ul li { font-family: 'avenirroman'; }
-nav ul li a:hover { color: rgba(255, 255, 255, 1) }
-
-header { background: rgba(152, 0, 46, 1); }
-#logo { font-family: 'avenirroman', Arial, sans-serif; font-size: 50px; color: rgba(255, 255, 255, 1)}
-#logo span { font-family: 'adobe_garamondsemibold_italic', serif; font-size: 40px; color: rgba(237, 23, 79, 1); }
-#home_nav a { font-family: 'avenirlight', sans-serif; font-size: 20px; text-align: center; color: black; }
-#home_nav a:hover { color: rgba(152, 0, 46, 1);}
-#home_nav ul li { list-style: none; }
+header {  }
+#header_top { background: rgba(237, 23, 79, 1); }
+#header_gap { background: url('../images/retro_intro.png') #f3f2f1; }
+#logo { background: rgba(152, 0, 46, 1); }
+header ul li { font-family: 'avenirroman', Arial, sans-serif; font-size: 38px; color: rgba(255, 255, 255, 1); list-style: none; }
+header ul li span { font-family: 'adobe_garamondsemibold_italic', serif; font-size: 70%; color: rgba(237, 23, 79, 1); }
+nav a { font-family: 'avenirroman', sans-serif; font-size: 18px; color: black; }
+nav a:hover { color: rgba(237, 23, 79, 1);}
+nav ul li { list-style: none; }
 
 #headline h1 { font-family: 'adobe_garamondsemibold_italic', sans-serif; color: rgba(152, 0, 46, 1); font-weight: lighter; font-size: 80px; }
 #headline h3 { font-family: 'avenirlight', sans-serif; font-weight: lighter; }
@@ -97,10 +128,16 @@ header { background: rgba(152, 0, 46, 1); }
 #client_box { background: white; }
 #clients h6 { font-family: 'avenirroman', sans-serif; color: rgba(237, 23, 79, 1); text-align: center; font-size: 18px; margin-top: 25px; }
 #clients ul li { font-family: 'avenirroman', sans-serif; list-style: none; text-align: center; font-size: 17px; margin-bottom: 8px; }
-#clients ul li a { text-decoration: none; color: rgba(255, 255, 255, .6); }
+#clients ul li a { text-decoration: none; color: rgba(255, 255, 255, 1); }
 #clients ul li a:hover { text-decoration: none; color: rgba(255, 255, 255, 1); }
 
-.page_title { font-family: 'avenirlight', sans-serif; font-size: 50px; }
+.section_divider { color: white; font-family: 'Allura', cursive; background-color: black; }
+.section_title { font-size: 150px; }
+#design {  }
+#development {  }
+#about {  }
+#contact {  }
+
 .subhead a { font-size: 18px; color: rgba(152, 0, 46, 1); }
 .subhead a:hover { color: #000; }
 .proj_title { font-family: 'avenirroman', sans-serif; color: rgba(152, 0, 46, 1); font-size: 34px;  }
@@ -110,70 +147,27 @@ header { background: rgba(152, 0, 46, 1); }
 .proj_img img { border: solid white 10px; width: 600px; margin: 0 auto; display: block; margin-bottom: 20px; }
 .proj_type h2 { font-family: 'avenirlight', sans-serif; font-size: 30px; text-transform: uppercase; }
 
-.proj_title-dev { font-family: 'avenirroman', sans-serif; background-color: rgba(152, 0, 46, 1); padding: 13px 10px 5px 10px; font-size: 28px; margin-bottom: 10px; border-radius: 10px 10px 0 0;  }
+.proj_title-dev { font-family: 'avenirroman', sans-serif; background-color: rgba(152, 0, 46, 1); padding: 13px 10px 5px 10px; font-size: 27px; margin-bottom: 10px; border-radius: 10px 10px 0 0;  }
 .proj_title-dev a { color: rgba(255, 255, 255, 1); text-decoration: none; }
-.proj_title-dev a:hover { color: rgba(255, 255, 255, .5); }
+.proj_title-dev a:hover { color: rgba(237, 23, 79, 1); }
+.proj_code a { font-size: 16px; color: rgba(237, 23, 79, 1);}
+.proj_code a:hover { color: rgba(255, 255, 255, 1);}
 .proj_img-dev img { margin: 0 auto; display: block; margin-bottom: 20px; }
 .proj_text-dev { font-family: 'avenirroman', sans-serif; font-size: 17px; line-height: 1.7em; }
 .proj_text-dev_header { background-color: black; padding: 5px 8px 4px 8px; color: white; font-size: 16px; }
 
-footer { text-align: center; color: white; font-size: 10px; }
-.about img { border: solid white 10px;  }
-.about p { font-family: 'avenirlight', sans-serif; font-size: 18px;  }
+#about-sec img { border: solid white 10px; margin: 5px 25px 0 0; float: left; }
+#about-sec p { font-family: 'avenirlight', sans-serif; font-size: 18px;  }
+.about-text { margin: 0 0 30px 0; }
 
 .contact-type h5 { font-family: 'avenirroman', sans-serif; background-color: black; color: rgba(237, 23, 79, 1); font-size: 26px; }
 .contact-info { font-family: 'avenirlight', Arial, sans-serif; color: black; font-size: 40px; }
 .contact-info a { font-family: 'avenirlight', Arial, sans-serif; color: black; font-size: 40px; }
 .contact-info a:hover { color: rgba(152, 0, 46, 1); }
+.last { margin: 0 0 100px 0; }
 
-/*-----  05 WEB STRUCTURE  -----*/
+footer { font-family: 'avenirlight', Arial, sans-serif; text-align: center; background-color: black; color: white; font-size: 15px; }
 
-#topbar { height: 15px; margin: 0 0 10px 0;}
-
-header { margin: 0 auto; height: 80px; padding: 50px 0 100px 0; }
-#logo { text-align: center; }
-
-#home_nav { width: 550px; margin: 0 auto;}
-#home_nav ul li { float: left; margin-left: 50px; }
-#nav {  position:fixed; z-index: 10;}
-
-#headline { margin-top: 180px; margin-bottom: 100px; }
-#headline h3 { margin-top: -10px; line-height: 1.3; }
-
-#clients { padding: 20px; }
-#clients h5 { padding: 5px 10px; width: 255px; }
-#client_box { width: 90%; height: 100px;}
-
-.proj_title { margin-bottom: 10px;  }
-.about img { margin: 0 auto; display: block; margin-bottom: 30px;  }
-.subhead a { margin-left: 30px; }
-.proj_type h2 { margin-top: 55px; }
-
-footer { margin-top: 20px; }
-
-.page_title { margin-top: 200px; }
-
-.contact { float: left; margin-right: 60px;}
-.contact-type h5 { padding: 10px; width: 100px; height: 42px; }
-
-
-/*------  05 SOCIAL MEDIA  ------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-
-
-
-/*------  06 CONTACT  -----------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-
-
-
-/*------  07 FOOTER  ------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-
-
-
-/*------  XX xxNAMExx  ----------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
 
 
 
